@@ -1,0 +1,21 @@
+<template name = "cardBoardPage">
+<h2>BOOM</h2>
+	<ul>
+		{{#each stacks}}
+			{{> stack}}
+		{{/each}}
+	</ul>
+</template>
+
+<template name="stack">
+	<li>{{name}}</li>
+	<ul>
+		{{#each cards}}
+			{{> card}}
+		{{/each}}
+	</ul>
+</template>
+
+<template name="card">
+	<li>{{name}}</li>
+</template>
