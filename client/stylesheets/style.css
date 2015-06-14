@@ -1,3 +1,11 @@
+html {
+	height:90%;	
+}
+
+body, .main-wrapper, #main {
+	height:100%;
+}
+
 * {
     outline: none !important;
 }

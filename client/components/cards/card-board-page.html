@@ -1,14 +1,30 @@
 <template name = "cardBoardPage">
-	<div class="uk-flex" style="padding:20px;overflow-x:scroll">
+	<div class="uk-flex" style="padding:20px;overflow-x:scroll;height:100%">
 		{{#each stacks}}
 			{{> stack}}
-		{{/each}}		
+		{{/each}}
+		<div id="new-stack" class="uk-panel" style="margin:10px;min-width:300px;max-width:300px">
+		<button id="add-stack-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add stack...</button>
+		<div id="add-stack-box" class="uk-panel uk-panel-box uk-panel-box-primary" style="display:none">
+		<form class="uk-form">
+		<div class="uk-form-row">
+			<textarea id="add-stack-input" style="width:270px;resize:vertical" autofocus="autofocus"></textarea>
+		</div>
+		<div class="uk-form-row">
+			<button id="create-stack-button" class="uk-button uk-button-success"><i class="uk-icon-plus"></i> Add</button>
+			<button id="cancel-add-stack-button" class="uk-button"><i class="uk-icon-times"></i></button>
+		</div>
+		</form>
+		</div>
+
+		</div>
 	</div>
 
 </template>
 
 <template name="stack">
 	<div id="{{_id}}" class="uk-panel uk-panel-box" style="margin:10px;min-width:300px;max-width:300px">
+	<h3>{{title}}</h3>
 	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
 		{{#each cards}}
 			{{> card}}

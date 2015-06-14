@@ -4,6 +4,40 @@ Template.cardBoardPage.helpers({
 	}
 });
 
+Template.cardBoardPage.events({
+	"click #add-stack-button": function(e) {
+		e.preventDefault();
+		
+		$("#add-stack-button").hide();
+		$("#add-stack-box").show();
+	},
+
+	"click #cancel-add-stack-button": function(e) {
+		e.preventDefault();
+
+		$("#add-stack-button").show();
+		$("#add-stack-box").hide();
+	},
+
+	"keydown #add-stack-input": function(ev) {
+	    if(ev.keyCode == 13 && ev.shiftKey == false) {
+			ev.preventDefault();	      	
+	      	var title = $('#add-stack-input').val();
+	      	if(title.length > 0) {
+	      		Stack.createStack({title: title});	        
+	      	}
+	    }
+	},
+
+	"click #create-stack-button": function(e) {
+		e.preventDefault();		
+		var title = $('#add-stack-input').val();		
+	    if(title.length > 0) {
+	      	Stack.createStack({stackId: this._id, title: title});	        
+	      }
+	}
+});
+
 Template.stack.helpers({
 	cards: function() {
 		return Cards.find({stackId: this._id});
@@ -57,6 +91,18 @@ var Card = {
 	      } else {
 	      	var $stack = $("#" + this._id);
 	        $stack.find('#add-card-input').val("");
+	      }
+	    });
+	}
+}
+
+var Stack = {
+	createStack: function(stack) {		
+	    Meteor.call('createStack', stack, function(error, result) {
+	      if (error) {
+	        return alert(error.reason);
+	      } else {	      	
+	        $('#add-stack-input').val("");
 	      }
 	    });
 	}
