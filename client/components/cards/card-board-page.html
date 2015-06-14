@@ -1,21 +1,37 @@
 <template name = "cardBoardPage">
-<h2>BOOM</h2>
-	<ul>
+	<div class="uk-flex" style="padding:20px;overflow-x:scroll">
 		{{#each stacks}}
 			{{> stack}}
-		{{/each}}
-	</ul>
+		{{/each}}		
+	</div>
+
 </template>
 
 <template name="stack">
-	<li>{{name}}</li>
-	<ul>
+	<div id="{{_id}}" class="uk-panel uk-panel-box" style="margin:10px;min-width:300px;max-width:300px">
+	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
 		{{#each cards}}
 			{{> card}}
 		{{/each}}
+		<button id="add-card-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add card...</button>
+		<div id="add-card-box" class="uk-panel uk-panel-box uk-panel-box-secondary" style="display:none">
+		<form class="uk-form">
+		<div class="uk-form-row">
+			<textarea id="add-card-input" style="width:270px;resize:vertical" autofocus="autofocus"></textarea>
+		</div>
+		<div class="uk-form-row">
+			<button id="create-card-button" class="uk-button uk-button-success"><i class="uk-icon-plus"></i> Add</button>
+			<button id="cancel-add-card-button" class="uk-button"><i class="uk-icon-times"></i></button>
+		</div>
+		</form>
+		</div>
 	</ul>
+	</div>
 </template>
 
 <template name="card">
-	<li>{{name}}</li>
+	<div class="uk-margin">
+		<div class="uk-panel uk-panel-box uk-panel-box-secondary" style="width:270px">{{title}}</div>
+	</div>
+	
 </template>

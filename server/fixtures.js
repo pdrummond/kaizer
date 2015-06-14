@@ -6,41 +6,47 @@ Meteor.startup(function() {
 
     	Stacks.insert({
     		_id: 'stack-1',
-    		name: 'Todo'
+    		title: 'Todo'
     	});    	
 
     	Cards.insert({
     		_id: 'card-1',
     		stackId: 'stack-1',
-    		name: 'This is the first keizer card!'
+    		title: 'This is the first keizer card!'
     	});
 
     	Cards.insert({
     		_id: 'card-2',
     		stackId: 'stack-1',
-    		name: 'This is the second keizer card!'
+    		title: 'This is the second keizer card!'
     	});    	
 
     	Stacks.insert({
     		_id: 'stack-2',
-    		name: 'Doing'
+    		title: 'Doing'
     	});
 
     	Stacks.insert({
     		_id: 'stack-3',
-    		name: 'Done'
+    		title: 'Done'
     	});
 
     	Cards.insert({
     		_id: 'card-3',
     		stackId: 'stack-2',
-    		name: 'CARD 3'
+    		title: 'CARD 3'
     	});
 
-    	Cards.insert({
-    		_id: 'card-4',
-    		stackId: 'stack-3',
-    		name: 'CARD 4'
-    	});
+        Cards.insert({
+            _id: 'card-4',
+            stackId: 'stack-3',
+            title: 'CARD 4'
+        });
+
+        Cards.insert({
+            _id: 'card-5',
+            stackId: 'stack-3',
+            title: 'CARD 5'
+        });
       
 });

@@ -9,4 +9,12 @@ autopublish
 insecure
 anti:fake
 sacha:spin
-cryptoquick:stylus-multi
+zcurtis:uikit
+audit-argument-checks
+konecty:mongo-counter
+peerlibrary:blaze-components
+u2622:persistent-session
+underscore
+momentjs:moment
+accounts-ui
+accounts-password
