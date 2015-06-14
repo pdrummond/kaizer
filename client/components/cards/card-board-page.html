@@ -23,13 +23,13 @@
 </template>
 
 <template name="stack">
-	<div id="{{_id}}" class="uk-panel uk-panel-box" style="margin:10px;min-width:300px;max-width:300px">
+	<div id="{{_id}}" class="kei-stack uk-panel uk-panel-box" style="margin:10px;min-width:300px;max-width:300px;overflow-y: scroll">
 	<h3>{{title}}</h3>
 	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
 		{{#each cards}}
 			{{> card}}
 		{{/each}}
-		<button id="add-card-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add card...</button>
+		<button id="add-card-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add card...</button>	
 		<div id="add-card-box" class="uk-panel uk-panel-box uk-panel-box-secondary" style="display:none">
 		<form class="uk-form">
 		<div class="uk-form-row">
@@ -43,11 +43,16 @@
 		</div>
 	</ul>
 	</div>
+	
+
 </template>
 
 <template name="card">
 	<div class="uk-margin">
-		<div class="uk-panel uk-panel-box uk-panel-box-secondary" style="width:270px">{{title}}</div>
+		<div class="uk-panel uk-panel-box uk-panel-box-secondary" style="width:270px">
+			<a>KEI-{{gid}}</a> {{title}}
+			
+		</div>
 	</div>
 	
 </template>

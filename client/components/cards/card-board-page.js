@@ -10,6 +10,7 @@ Template.cardBoardPage.events({
 		
 		$("#add-stack-button").hide();
 		$("#add-stack-box").show();
+		$("#add-stack-input").focus();
 	},
 
 	"click #cancel-add-stack-button": function(e) {
@@ -48,9 +49,10 @@ Template.stack.events({
 	"click #add-card-button": function(e) {
 		e.preventDefault();
 
-		var $stack = $("#" + this._id);
+		var $stack = $("#" + this._id);		
 		$stack.find("#add-card-button").hide();
 		$stack.find("#add-card-box").show();
+		$stack.find("#add-card-input").focus();
 	},
 
 	"click #cancel-add-card-button": function(e) {
@@ -88,9 +90,8 @@ var Card = {
 	    Meteor.call('createCard', card, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
-	      } else {
-	      	var $stack = $("#" + this._id);
-	        $stack.find('#add-card-input').val("");
+	      } else {	      	
+	        $('#add-card-input').val("");
 	      }
 	    });
 	}
