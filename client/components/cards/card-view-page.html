@@ -1,0 +1,33 @@
+<template name="cardViewPage">
+
+<article class="uk-article" >
+	<div id="card-header" data-uk-sticky style="background:white;border-top:1px solid lightgray;border-bottom:1px solid lightgray;padding:10px">
+	<h4 class='uk-article-title'>This is the card title</h4>
+	<p class='uk-article-meta'>Created by Paul Drummond on 9th May 2015</p>
+	<p>This is the description</p>
+	</div>
+	<div class="uk-list uk-list-line" style="padding-left:50px; padding-bottom:150px">
+	{{#each messages}}
+		{{> Template.dynamic template=messageType}}
+	{{/each}}
+	</div>
+	{{> CreateBoxComponent }}
+</article>
+
+</template>
+
+<template name="comment">
+	<div class="uk-panel" style="padding:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:absolute;left:-30px;top: 15px;border-radius:50%"/>
+	    <div style="color:gray"><strong>{{username}}</strong> - {{formatTime createdAt}}</div>
+	    <span class="uk-panel" style="inline-block">{{content}}</span> 
+	    
+	</div>
+</template>
+
+<template name="activity">
+	<div class="uk-panel" style="padding:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:absolute;width:20px;left:-23px;top:12px;border-radius:50%"/>
+	    <div style="color:gray"><strong>{{username}}</strong> {{{activityMessage}}} -   {{formatTime createdAt}}</div>	    
+	</div>
+</template>

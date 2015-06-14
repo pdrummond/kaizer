@@ -1,10 +1,10 @@
-Template.cardBoardPage.helpers({
+Template.columnViewPage.helpers({
 	stacks: function() {
 		return Stacks.find();
 	}
 });
 
-Template.cardBoardPage.events({
+Template.columnViewPage.events({
 	"click #add-stack-button": function(e) {
 		e.preventDefault();
 		
