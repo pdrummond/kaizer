@@ -1,12 +1,7 @@
 <template name="cardViewPage">
 
-<article class="uk-article" >
-	<div id="card-header" data-uk-sticky style="background:white;border-top:1px solid lightgray;border-bottom:1px solid lightgray;padding:10px">
-	<h4 class='uk-article-title'>{{currentCardTitle}}</h4>
-	<p class='uk-article-meta'>Created by Paul Drummond on 9th May 2015</p>
-	<p>This is the description</p>
-	</div>
-	<div class="uk-list uk-list-line" style="padding-left:50px; padding-bottom:150px">
+<article class="uk-article">	
+	<div class="uk-list uk-list-line" style="padding-left:25px; padding-bottom:50px">
 	{{#each messages}}
 		{{> Template.dynamic template=messageType}}
 	{{/each}}

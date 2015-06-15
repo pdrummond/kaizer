@@ -1,9 +1,7 @@
 html {
-	height:90%;		
+	height:100%;		
 }
-body, .main-wrapper, #main {
-	height:100%;
-}
+
 
 body, h1, h2, h3, h4, h5, h6, .uk-navbar-nav > li > a {
   font-family: 'Ubuntu', sans-serif;

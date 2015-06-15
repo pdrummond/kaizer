@@ -1,8 +1,13 @@
 <template name="layout">
-	<div>
-    {{> loginButtons}}
-
-    {{> yield}}
-
-  </div>
+	<div class="ui secondary pointing menu" style="position:fixed;z-index:9999;top:0;width:100%;background:white">
+		<nav class="uk-navbar" >
+		<a class="uk-navbar-brand" href="/">Kaizer</a>
+		<div class="uk-navbar-flip">
+			{{> loginButtons}}
+		</div>
+		</nav>	
+	</div>
+	<div id="main">
+    	{{> yield}}
+  	</div>
 </template>

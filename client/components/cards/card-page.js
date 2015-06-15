@@ -5,6 +5,10 @@ Template.cardPage.events({
 
 	"click #column-view-button": function() {
 		Session.setPersistent("viewModeTemplate", "columnViewPage");
+	},
+
+	"click #toggle-desc": function() {
+		$("#card-description").toggle();
 	}
 });
 
