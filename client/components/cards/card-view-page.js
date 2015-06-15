@@ -1,6 +1,6 @@
 Template.cardViewPage.helpers({
 	messages: function() {
-		return Messages.find();
+		return Messages.find({cardId: Session.get('cardId')});
 	},	
 });
 
@@ -18,8 +18,8 @@ Template.activity.helpers({
 	activityMessage: function() {
 		var message = '?';
 		switch(this.activityType) {
-			case 'add-card':
-			message = 'created card <a>KEI-' + this.cardAddedGid + '</a>';
+			case 'createCard':
+			message = 'created card <a href="/card/' + this.addedCardId + '">KEI-' + this.addedCardGid + '</a>';
 			break;
 		}
 		return message;

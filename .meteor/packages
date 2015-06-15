@@ -19,3 +19,4 @@ momentjs:moment
 accounts-ui
 accounts-password
 jparker:gravatar
+iron:router

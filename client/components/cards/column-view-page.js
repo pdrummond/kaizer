@@ -1,6 +1,6 @@
 Template.columnViewPage.helpers({
 	stacks: function() {
-		return Stacks.find();
+		return Stacks.find({cardId: Session.get('cardId')});
 	}
 });
 
@@ -34,7 +34,7 @@ Template.columnViewPage.events({
 		e.preventDefault();		
 		var title = $('#add-stack-input').val();		
 	    if(title.length > 0) {
-	      	Stack.createStack({stackId: this._id, title: title});	        
+	      	Stack.createStack({title: title});	        
 	      }
 	}
 });
@@ -86,7 +86,11 @@ Template.stack.events({
 
 var Card = {
 	createCard: function(card) {
-		card = _.extend(card, {cardType: 'normal'});
+		card = _.extend(card, {
+			cardType: 'normal', 
+			boardId: Session.get('boardId'), 
+			cardId: Session.get('cardId')
+		});
 	    Meteor.call('createCard', card, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
@@ -98,7 +102,8 @@ var Card = {
 }
 
 var Stack = {
-	createStack: function(stack) {		
+	createStack: function(stack) {	
+		stack = _.extend(stack, {boardId: Session.get('boardId'), cardId: Session.get('cardId')});	
 	    Meteor.call('createStack', stack, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);

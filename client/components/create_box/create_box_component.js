@@ -14,8 +14,9 @@ CreateBoxComponent = BlazeComponent.extendComponent({
       var content = $('#create-box-input').val();
       if(content.length > 0) {
         var comment = {
+            boardId: Session.get('boardId'),
+            cardId: Session.get('cardId'),
             content: content,
-            cardId: "card-0", //TODO: this is temporary            
         };
 
         Meteor.call('createCommentMessage', comment, function(error, result) {

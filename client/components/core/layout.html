@@ -1,14 +1,8 @@
 <template name="layout">
-  <div class="main-wrapper">    
-    <div id="main">
-    	{{> loginButtons}}
+	<div>
+    {{> loginButtons}}
 
-    	<div class="uk-button-group">    
-    		<button id="card-view-button" class="uk-button">Card View</button>
-    		<button id="column-view-button" class="uk-button">Column View</button>
-		</div>
+    {{> yield}}
 
-      	{{> Template.dynamic template=viewModeTemplate }}
-    </div>
   </div>
 </template>
