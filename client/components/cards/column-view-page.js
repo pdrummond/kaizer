@@ -1,6 +1,6 @@
 Template.columnViewPage.helpers({
 	stacks: function() {
-		return Stacks.find({cardId: Session.get('cardId')});
+		return Stacks.find({boardId: Session.get('boardId')});
 	}
 });
 
@@ -81,6 +81,14 @@ Template.stack.events({
 	    if(title.length > 0) {
 	      	Card.createCard({stackId: this._id, title: title});	        
 	      }
+	}
+});
+
+Template.card.events({
+	"click .card-link": function() {		
+		Session.set("currentCardId", this._id);
+		Session.set("currentCard", this);
+		Session.set("currentSidebarView", "cardViewPage");
 	}
 });
 

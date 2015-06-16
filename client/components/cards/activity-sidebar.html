@@ -1,0 +1,37 @@
+<template name="activitySidebar">
+	<ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="">
+	    <li class="uk-parent" aria-expanded="false">
+	        <a href="#">Menu </a>
+	        <div style="overflow:hidden;height:0;position:relative;" class="uk-hidden"><ul class="uk-nav-sub">
+	            <li><a href="#">Power-ups</a></li>	            
+	            <li><a href="#">Labels</a></li>	            
+	            <li><a href="#">Stickers</a></li>	            
+	            <li><a href="#">Filter Cards</a></li>	            
+	            <li><a href="#">Archived Items</a></li>	            
+	        </ul></div>
+	    </li>
+	    <li class="uk-nav-divider"></li>
+	    <li><a href="#"><i class="uk-icon-rss"></i> Activity </a></li>
+	</ul>
+	<div class="uk-list uk-list-line" style="height:100%;overflow-y:scroll;padding-left:25px; padding-bottom:50px">
+	{{#each messages}}
+		{{> Template.dynamic template=messageType}}
+	{{/each}}
+	</div>
+</template>
+
+<template name="comment">
+	<div class="uk-panel" style="padding:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:absolute;left:-30px;top: 15px;border-radius:50%"/>
+	    <div style="color:gray"><strong>{{username}}</strong> - {{formatTime createdAt}}</div>
+	    <span class="uk-panel" style="inline-block">{{content}}</span> 
+	    
+	</div>
+</template>
+
+<template name="activity">
+	<div class="uk-panel" style="padding:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:absolute;width:20px;left:-23px;top:12px;border-radius:50%"/>
+	    <div style="color:gray"><strong>{{username}}</strong> {{{activityMessage}}} -   {{formatTime createdAt}}</div>	    
+	</div>
+</template>

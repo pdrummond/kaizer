@@ -18,9 +18,10 @@ Template.cardPage.helpers({
 	},
 	
 	viewModeTemplate: function() {
-		var template = Session.get('viewModeTemplate');
+		/*var template = Session.get('viewModeTemplate');
 		template = template == null ? 'columnViewPage' : template;
 		console.log("template: " + template);
-		return template;
+		return template;*/
+		return "columnViewPage";
 	}
 })

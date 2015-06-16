@@ -3,55 +3,27 @@
 	{
 		"selected_items":
 		[
+			[
+				"activity",
+				"activitySidebar"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "lib/router.js",
+			"file": "client/components/cards/card-page.html",
 			"settings":
 			{
-				"buffer_size": 857,
+				"buffer_size": 459,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "client/components/cards/column-view-page.html",
+			"file": "client/components/cards/activity-sidebar.js",
 			"settings":
 			{
-				"buffer_size": 2127,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/components/cards/card-page.js",
-			"settings":
-			{
-				"buffer_size": 554,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/components/cards/column-view-page.js",
-			"settings":
-			{
-				"buffer_size": 2934,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/collections/stacks.js",
-			"settings":
-			{
-				"buffer_size": 492,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/collections/cards.js",
-			"settings":
-			{
-				"buffer_size": 1161,
+				"buffer_size": 625,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +31,15 @@
 			"file": "client/components/cards/card-view-page.js",
 			"settings":
 			{
-				"buffer_size": 595,
+				"buffer_size": 269,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/collections/cards.js",
+			"settings":
+			{
+				"buffer_size": 1102,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +47,63 @@
 			"file": "lib/collections/messages.js",
 			"settings":
 			{
-				"buffer_size": 1275,
+				"buffer_size": 1253,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/helpers/card_helpers.js",
+			"settings":
+			{
+				"buffer_size": 112,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/cards/activity-sidebar.html",
+			"settings":
+			{
+				"buffer_size": 1676,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/cards/card-view-page.html",
+			"settings":
+			{
+				"buffer_size": 396,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/create_box/create_box.html",
+			"settings":
+			{
+				"buffer_size": 692,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/create_box/create_box_component.js",
+			"settings":
+			{
+				"buffer_size": 895,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/sidebar/sidebar.js",
+			"settings":
+			{
+				"buffer_size": 159,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/sidebar/sidebar.html",
+			"settings":
+			{
+				"buffer_size": 223,
 				"line_ending": "Windows"
 			}
 		}
@@ -120,28 +156,34 @@
 		"/D/src/kaizer/client/components/cards",
 		"/D/src/kaizer/client/components/core",
 		"/D/src/kaizer/client/components/create_box",
+		"/D/src/kaizer/client/components/sidebar",
 		"/D/src/kaizer/client/helpers",
+		"/D/src/kaizer/client/stylesheets",
 		"/D/src/kaizer/lib",
 		"/D/src/kaizer/lib/collections"
 	],
 	"file_history":
 	[
-		"/D/src/kaizer/lib/collections/boards.js",
+		"/D/src/kaizer/client/components/cards/column-view-page.js",
+		"/D/src/kaizer/client/components/cards/column-view-page.html",
+		"/D/src/kaizer/lib/router.js",
+		"/D/src/kaizer/client/helpers/board_helpers.js",
+		"/D/src/kaizer/client/components/core/layout.html",
+		"/D/src/kaizer/client/components/boards/boards.html",
+		"/D/src/kaizer/lib/collections/stacks.js",
 		"/D/src/kaizer/lib/collections/cards.js",
+		"/D/src/kaizer/client/components/cards/card-page.html",
+		"/D/src/kaizer/client/components/cards/card-page.js",
+		"/D/src/kaizer/lib/collections/boards.js",
+		"/D/src/kaizer/client/components/cards/activity-sidebar.js",
+		"/D/src/kaizer/lib/collections/messages.js",
+		"/D/src/kaizer/client/components/cards/activity-sidebar.html",
 		"/D/src/kaizer/client/components/cards/card-view-page.html",
 		"/D/src/kaizer/client/helpers/card_helpers.js",
 		"/D/src/kaizer/client/components/cards/card-view-page.js",
-		"/D/src/kaizer/client/components/cards/column-view-page.js",
 		"/D/src/kaizer/client/components/boards/boards.js",
 		"/D/src/kaizer/client/components/create_box/create_box_component.js",
-		"/D/src/kaizer/client/components/boards/boards.html",
-		"/D/src/kaizer/lib/router.js",
-		"/D/src/kaizer/lib/collections/messages.js",
 		"/D/src/bs-workspace/bs-web/target/bs-web/js/home/app/view/MessageContainerView.js",
-		"/D/src/kaizer/client/components/cards/card-page.js",
-		"/D/src/kaizer/lib/collections/stacks.js",
-		"/D/src/kaizer/client/components/cards/card-page.html",
-		"/D/src/kaizer/client/components/core/layout.html",
 		"/D/src/kaizer/client/components/core/layout.js",
 		"/D/src/kaizer/client/main.html",
 		"/D/src/kaizer/lib/collections/board.js",
@@ -205,19 +247,135 @@
 			[
 				{
 					"buffer": 0,
-					"file": "lib/router.js",
+					"file": "client/components/cards/card-page.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 857,
+						"buffer_size": 459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								326,
-								326
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/components/cards/activity-sidebar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/components/cards/card-view-page.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/collections/cards.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/collections/messages.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
 							]
 						],
 						"settings":
@@ -234,20 +392,48 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "client/components/cards/column-view-page.html",
+					"buffer": 5,
+					"file": "client/helpers/card_helpers.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2127,
+						"buffer_size": 112,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1898,
-								1898
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/components/cards/activity-sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1600,
+								1600
 							]
 						],
 						"settings":
@@ -256,154 +442,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 722.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/components/cards/card-page.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								509,
-								509
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/components/cards/column-view-page.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2934,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2826,
-								2826
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1596.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "lib/collections/stacks.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 492,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "lib/collections/cards.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1161,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								276,
-								276
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "client/components/cards/card-view-page.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 595,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								567,
-								567
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 342.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -411,19 +450,75 @@
 				},
 				{
 					"buffer": 7,
-					"file": "lib/collections/messages.js",
+					"file": "client/components/cards/card-view-page.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1275,
+						"buffer_size": 396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								75,
-								75
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/components/create_box/create_box.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/components/create_box/create_box_component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								271
 							]
 						],
 						"settings":
@@ -432,11 +527,68 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
+						"translation.x": -0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "client/components/sidebar/sidebar.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "client/components/sidebar/sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]

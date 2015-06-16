@@ -1,28 +1,11 @@
-<template name="cardViewPage">
-
-<article class="uk-article">	
+<template name="cardViewPage">	
+	<div class="card-view-wrapper" style="width:500px">
+	<button id="card-view-back-button" class="uk-button">Back</button> <h3>{{currentCardTitle}}</h3>
 	<div class="uk-list uk-list-line" style="padding-left:25px; padding-bottom:50px">
 	{{#each messages}}
 		{{> Template.dynamic template=messageType}}
 	{{/each}}
 	</div>
-	{{> CreateBoxComponent }}
-</article>
-
-</template>
-
-<template name="comment">
-	<div class="uk-panel" style="padding:10px;position:relative">
-		<img src="{{createdByImageUrl}}" style="position:absolute;left:-30px;top: 15px;border-radius:50%"/>
-	    <div style="color:gray"><strong>{{username}}</strong> - {{formatTime createdAt}}</div>
-	    <span class="uk-panel" style="inline-block">{{content}}</span> 
-	    
-	</div>
-</template>
-
-<template name="activity">
-	<div class="uk-panel" style="padding:10px;position:relative">
-		<img src="{{createdByImageUrl}}" style="position:absolute;width:20px;left:-23px;top:12px;border-radius:50%"/>
-	    <div style="color:gray"><strong>{{username}}</strong> {{{activityMessage}}} -   {{formatTime createdAt}}</div>	    
+	{{> CreateBoxComponent}}
 	</div>
 </template>

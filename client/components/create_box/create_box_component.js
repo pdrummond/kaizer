@@ -15,7 +15,7 @@ CreateBoxComponent = BlazeComponent.extendComponent({
       if(content.length > 0) {
         var comment = {
             boardId: Session.get('boardId'),
-            cardId: Session.get('cardId'),
+            cardId: Session.get('currentCardId'),
             content: content,
         };
 
