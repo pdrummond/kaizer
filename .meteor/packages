@@ -9,7 +9,6 @@ autopublish
 insecure
 anti:fake
 sacha:spin
-zcurtis:uikit
 audit-argument-checks
 konecty:mongo-counter
 peerlibrary:blaze-components
@@ -20,3 +19,5 @@ accounts-ui
 accounts-password
 jparker:gravatar
 iron:router
+semantic:ui
+flemay:less-autoprefixer

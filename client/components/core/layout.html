@@ -1,13 +1,12 @@
 <template name="layout">
-	<div class="ui secondary pointing menu" style="position:fixed;z-index:9999;top:0;width:100%;background:white">
-		<nav class="uk-navbar" >
-		<a class="uk-navbar-brand" href="/">Kaizer</a>
-		<div class="uk-navbar-nav">
-			{{> loginButtons}}
-		</div>
-		</nav>	
-	</div>
-	<div id="main">
+<nav class="ui pointing menu nav">
+            <a class="item" href="/"><i class="home icon"></i> Home</a>
+            <a class="item" href="/tasks"><i class="users icon"></i> Tasks</a>
+            <a class="item" href="/article"><i class="alarm outline icon"></i> Articles</a>
+            <a class="item active" href="/"><i class="alarm icon"></i> Tasks</a>
+            <a class="item" href="/"><i class="marker icon"></i> Boards</a>
+     </nav>	
+	<div class="page-wrap">
     	{{> yield}}
   	</div>
 </template>
