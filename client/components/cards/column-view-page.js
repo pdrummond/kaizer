@@ -94,11 +94,7 @@ Template.card.events({
 
 var Card = {
 	createCard: function(card) {
-		card = _.extend(card, {
-			cardType: 'normal', 
-			boardId: Session.get('boardId'), 
-			cardId: Session.get('cardId')
-		});
+		card = _.extend(card, {cardType: 'normal', boardId: Session.get('boardId')});
 	    Meteor.call('createCard', card, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
@@ -111,7 +107,7 @@ var Card = {
 
 var Stack = {
 	createStack: function(stack) {	
-		stack = _.extend(stack, {boardId: Session.get('boardId'), cardId: Session.get('cardId')});	
+		stack = _.extend(stack, {boardId: Session.get('boardId')});	
 	    Meteor.call('createStack', stack, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
