@@ -1,0 +1,22 @@
+<template name="CardFilterInput">
+<div class="ui vertical segment">
+	<div class="ui menu">
+	    <div class="item"><i class="filter icon"></i> Filters</div>
+	    
+	        <div class="ui dropdown item" data-type="type" tabindex="0">
+	        <div class="text">Any</div>
+	        <i class="dropdown icon"></i>
+	        <div class="menu" tabindex="-1">
+	            <a class="active item" data-value="">Any</a>           
+	            <a class="item" data-value="status">Status</a>            
+	            <a class="item" data-value="milestone">Milestone</a>            
+        	</div>
+    	</div>
+	    <div class="right menu">
+        	<div class="item">
+            	<button id="reset" class="ui button">Reset</button>
+        	</div>
+    	</div>
+	</div>
+</div>
+</template>

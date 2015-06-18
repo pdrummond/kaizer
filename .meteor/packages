@@ -5,7 +5,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 anti:fake
 sacha:spin
@@ -21,3 +20,6 @@ jparker:gravatar
 iron:router
 semantic:ui
 flemay:less-autoprefixer
+tsega:filter-collections
+aldeed:collection2
+autopublish

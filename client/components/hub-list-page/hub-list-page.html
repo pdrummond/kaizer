@@ -1,0 +1,9 @@
+<template name="hubListPage">
+<h1>Hub</h1>
+<button id="new-hub-button" class="uk-button">Create Hub</button>
+<ul>
+{{#each hubs}}
+	<li><a href="/hub/{{_id}}">{{title}}</a></li>
+{{/each}}
+</ul>
+</template>

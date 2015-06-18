@@ -1,0 +1,34 @@
+<template name="hubPage">
+<div class="ui top attached tabular menu">
+    <a class="active item" data-tab="first">Cards</a>
+    <a class="item" data-tab="second">Status Board</a>
+    <a class="item" data-tab="third">Milestone Board</a>
+  </div>
+<div class="ui bottom attached active tab segment" data-tab="first">
+    	{{>CardFilterInput}}
+    	<table class="ui sortable celled table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Milestone</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+	  		{{#each cards}}
+	  		<tr>
+			    <td>{{title}}</td>
+          <td>{{status}}</td>
+          <td>{{milestone}}</td>
+			    <td>{{createdAt}}</td>
+	  		</tr>
+	  		{{/each}}
+		</table>	
+  </div>
+<div class="ui bottom attached tab segment" data-tab="second">
+    Second
+  </div>
+<div class="ui bottom attached tab segment" data-tab="third">
+    Third
+  </div>
+</template>
