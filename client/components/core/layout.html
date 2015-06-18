@@ -1,11 +1,8 @@
 <template name="layout">
-<nav class="ui pointing menu nav">
-            <a class="item" href="/"><i class="home icon"></i> Home</a>
-            <a class="item" href="/tasks"><i class="users icon"></i> Tasks</a>
-            <a class="item" href="/article"><i class="alarm outline icon"></i> Articles</a>
-            <a class="item active" href="/"><i class="alarm icon"></i> Tasks</a>
-            <a class="item" href="/"><i class="marker icon"></i> Boards</a>
-     </nav>	
+	{{> header}}
+
+	{{> sidebar}}
+
 	<div class="page-wrap" style="padding:10px">
     	{{> yield}}
   	</div>
