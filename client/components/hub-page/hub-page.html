@@ -6,24 +6,7 @@
   </div>
 <div class="ui bottom attached active tab segment" data-tab="first">
     	{{>CardFilterInput}}
-    	<table class="ui sortable celled table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Status</th>
-            <th>Milestone</th>
-            <th>Created</th>
-          </tr>
-        </thead>
-	  		{{#each cards}}
-	  		<tr>
-			    <td>{{title}}</td>
-          <td>{{status}}</td>
-          <td>{{milestone}}</td>
-			    <td>{{createdAt}}</td>
-	  		</tr>
-	  		{{/each}}
-		</table>	
+    	{{> tabular table=TabularTables.Cards class="table table-striped table-bordered table-condensed"}}
   </div>
 <div class="ui bottom attached tab segment" data-tab="second">
     Second

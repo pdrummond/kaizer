@@ -9,12 +9,14 @@ Meteor.startup(function() {
 	});
 
 
+	for(var i =0 ; i < 1000; i++) {
 	Cards.insert({
-		_id: "card-1",
-		title:"Card1",
+		_id: "card-" + i,
+		title: Fake.sentence(10),
 		hubId: "hub-1",
-		createdAt: "Today",
-		status: "Open",
-		milestone: "Sprint 1"
+		createdAt: new Date(),
+		status: Fake.fromArray(['Open', 'In Progress', 'Blocked', 'In Test', 'Done']),
+		milestone: Fake.fromArray(['Sprint 1', 'Sprint 10', 'Sprint 2', 'Release 1.0', 'Release Future']),
 	});
+	}
 });
