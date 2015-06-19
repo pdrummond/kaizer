@@ -4,3 +4,9 @@ Template.sidebar.helpers({
 		return viewTemplate;
 	}
 })
+
+Template.sidebar.events({
+	"click #show-card-list-button": function() {
+		Session.set("currentSidebarView", "cardListWidget");
+	}
+});

@@ -1,15 +1,19 @@
 <template name="activitySidebar">
 <ul class="nav nav-pills nav-stacked">
-<li class="active"><a href="#">Home</a></li>
-<li><a href="#">Profile</a></li>
-<li class="disabled"><a href="#">Disabled</a></li>
-
-</ul>	
+	<li class="active"><a data-toggle="collapse" href="#activity-sidebar-menu"><span class="caret"></span> Menu</a></li>
+	<ul id="activity-sidebar-menu" class="collapse nav nav-pills nav-stacked">
+		<li><a id="show-card-list-button" href="">Cards</a></li>
+		<li class="disabled"><a href="#">Profile</a></li>
+	</ul>
+	<h3><small><i class="fa fa-rss"></i> Activity</small></h3>
+</ul>
+<div class="panel panel-default">
 	<div style="height:100%;overflow-y:scroll;padding-bottom:50px">
 	{{#each messages}}
 		{{> Template.dynamic template=messageType}}
 	{{/each}}
 	</div>
+</div>
 </template>
 
 <template name="comment">

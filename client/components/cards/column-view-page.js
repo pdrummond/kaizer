@@ -84,13 +84,6 @@ Template.stack.events({
 	}
 });
 
-Template.card.events({
-	"click .card-link": function() {		
-		Session.set("currentCardId", this._id);
-		Session.set("currentCard", this);
-		Session.set("currentSidebarView", "cardViewPage");
-	}
-});
 
 var Card = {
 	createCard: function(card) {

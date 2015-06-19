@@ -14,15 +14,11 @@ peerlibrary:blaze-components
 u2622:persistent-session
 underscore
 momentjs:moment
-accounts-ui
 accounts-password
 jparker:gravatar
 iron:router
-semantic:ui
-flemay:less-autoprefixer
-tsega:filter-collections
 aldeed:collection2
 autopublish
-aldeed:tabular
 twbs:bootstrap
-bootswatch:paper
+fortawesome:fontawesome
+ian:accounts-ui-bootstrap-3

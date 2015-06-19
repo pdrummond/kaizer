@@ -6,6 +6,6 @@ Template.cardViewPage.helpers({
 
 Template.cardViewPage.events({
 	"click #card-view-back-button": function() {
-		Session.set("currentSidebarView", "activitySidebar");
+		Session.set("currentSidebarView", "cardListWidget");
 	}
 });

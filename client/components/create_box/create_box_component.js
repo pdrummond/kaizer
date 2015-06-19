@@ -14,7 +14,7 @@ CreateBoxComponent = BlazeComponent.extendComponent({
       var content = $('#create-box-input').val();
       if(content.length > 0) {
         var comment = {
-            boardId: Session.get('boardId'),
+            hubId: Session.get('currentHubId'),
             cardId: Session.get('currentCardId'),
             content: content,
         };

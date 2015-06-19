@@ -1,5 +1,7 @@
 <template name="sidebar">
-<div class="panel panel-default" data-uk-observe style="position:fixed;top:65px;right:0px;height:100%;z-index:999;min-width:200px;transition: all 0.2s ease-in-out;">
-	{{> Template.dynamic template=sidebarView}}
-</div>
-</template>
+	<div class="sidebar-wrapper" style="position:fixed;top:0px;right:0px;height:100%;z-index:999;min-width:300px;transition: all 0.2s ease-in-out;">
+		<div class="panel panel-default" style="padding:50px;overflow-y:scroll">
+			{{> Template.dynamic template=sidebarView}}
+		</div>
+	</div>
+</template> 
