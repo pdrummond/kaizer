@@ -7,27 +7,30 @@
 	</ul>
 	<h3><small><i class="fa fa-rss"></i> Activity</small></h3>
 </ul>
-<div class="panel panel-default">
-	<div style="height:100%;overflow-y:scroll;padding-bottom:50px">
+<div style="height:85%;overflow-y:scroll;">
 	{{#each messages}}
 		{{> Template.dynamic template=messageType}}
 	{{/each}}
-	</div>
 </div>
 </template>
 
 <template name="comment">
-	<div class="uk-panel" style="padding:10px;position:relative">
-		<img src="{{createdByImageUrl}}" style="position:absolute;left:-30px;top: 15px;border-radius:50%"/>
-	    <div style="color:gray"><strong>{{username}}</strong> - {{formatTime createdAt}}</div>
-	    <span class="uk-panel" style="inline-block">{{content}}</span> 
+	<div class="activity-item" style="margin-bottom:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:relative;top:5px;width:25px;float:left;border-radius:50%"/>
+		<div style="margin-left:30px">
+	    <div style="color:gray">{{username}} <span class="time-label"> - {{formatTime createdAt}}</span></div>
+	    <span>{{content}}</span> 
+	    </div>
 	    
 	</div>
 </template>
 
 <template name="activity">
-	<div class="uk-panel" style="padding:10px;position:relative">
-		<img src="{{createdByImageUrl}}" style="position:absolute;width:20px;left:-23px;top:12px;border-radius:50%"/>
-	    <div style="color:gray"><strong>{{username}}</strong> {{{activityMessage}}} -   {{formatTime createdAt}}</div>	    
+	<div class="activity-item" style="margin-bottom:10px;position:relative">
+		<img src="{{createdByImageUrl}}" style="position:relative;top:5px;width:25px;float:left;border-radius:50%"/>
+		<div style="margin-left:30px">
+	    <div style="color:gray">{{username}} <span class="time-label"> - {{formatTime createdAt}}</span></div>
+	    <span><i>{{{activityMessage}}}</i></span>
+	    </div>
 	</div>
 </template>

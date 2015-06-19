@@ -1,7 +1,18 @@
 <template name="cardViewPage">	
-	<div class="card-view-wrapper" style="width:500px">
-	<button id="card-view-back-button" class="uk-button">Back</button> <h3>{{currentCardTitle}}</h3>
-	<div class="uk-list uk-list-line" style="padding-left:25px; padding-bottom:50px">
+	<div id="card-view-page" style="width:300px;height:100%">
+	<div class="btn-group  pull-left" role="group" aria-label="...">
+  		<button id="back-button" type="button" class="btn btn-default"><i class="fa fa-arrow-left"></i> Back</button>
+  	</div>
+  	<div class="btn-group pull-right" role="group" aria-label="...">
+  		<button type="button" class="btn btn-danger"><i class="fa fa-times "></i> Delete</button>  
+	</div>	
+	<div style="clear:both;padding-top:10px">
+	{{#with currentCard}}
+		{{> cardWidget }}
+	{{/with}}
+	</div>
+	
+	<div style="padding-left:25px; overflow-y:auto;height:55%">
 	{{#each messages}}
 		{{> Template.dynamic template=messageType}}
 	{{/each}}

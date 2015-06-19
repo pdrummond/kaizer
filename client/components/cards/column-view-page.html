@@ -1,19 +1,19 @@
 <template name = "columnViewPage">
 	
-	<div class="uk-flex" style="padding:20px;overflow-x:scroll;height:100%">
+	<div style="display:flex;padding-top:20px;overflow-x:scroll;height:90%;">
 		{{#each stacks}}
-			{{> stack}}
+			{{> stackWidget}}
 		{{/each}}
-		<div id="new-stack" class="uk-panel" style="margin:10px;min-width:300px;max-width:300px">
-		<button id="add-stack-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add stack...</button>
-		<div id="add-stack-box" class="uk-panel uk-panel-box uk-panel-box-primary" style="display:none">
-		<form class="uk-form">
-		<div class="uk-form-row">
-			<textarea id="add-stack-input" style="width:270px;resize:vertical" autofocus="autofocus"></textarea>
+		<div id="new-stack" style="height:70px;min-width:300px;max-width:300px">
+		<button id="add-stack-button" class="btn btn-link"><i class="fa fa-plus"></i> Add stack...</button>
+		<div id="add-stack-box" class="panel panel-default" style="display:none">
+		<form style="padding:10px">
+		<div class="form-group">
+			<textarea id="add-stack-input" class="form-control" style="resize:vertical" autofocus="autofocus"></textarea>
 		</div>
-		<div class="uk-form-row">
-			<button id="create-stack-button" class="uk-button uk-button-success"><i class="uk-icon-plus"></i> Add</button>
-			<button id="cancel-add-stack-button" class="uk-button"><i class="uk-icon-times"></i></button>
+		<div class="form-group">
+			<button id="create-stack-button" class="btn btn-success"><i class="fa fa-plus"></i> Add</button>
+			<button id="cancel-add-stack-button" class="btn"><i class="fa fa-times"></i></button>
 		</div>
 		</form>
 		</div>
@@ -23,27 +23,3 @@
 
 </template>
 
-<template name="stack">
-	<div id="{{_id}}" class="kei-stack uk-panel uk-panel-box" style="margin:10px;min-width:300px;max-width:300px;overflow-y: scroll">
-	<h3>{{title}}</h3>
-	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
-		{{#each cards}}
-			{{> card}}
-		{{/each}}
-		<button id="add-card-button" class="uk-button-link"><i class="uk-icon-plus"></i> Add card...</button>	
-		<div id="add-card-box" class="uk-panel uk-panel-box uk-panel-box-secondary" style="display:none">
-		<form class="uk-form">
-		<div class="uk-form-row">
-			<textarea id="add-card-input" style="width:270px;resize:vertical" autofocus="autofocus"></textarea>
-		</div>
-		<div class="uk-form-row">
-			<button id="create-card-button" class="uk-button uk-button-success"><i class="uk-icon-plus"></i> Add</button>
-			<button id="cancel-add-card-button" class="uk-button"><i class="uk-icon-times"></i></button>
-		</div>
-		</form>
-		</div>
-	</ul>
-	</div>
-	
-
-</template>

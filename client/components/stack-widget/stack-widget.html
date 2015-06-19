@@ -1,0 +1,25 @@
+
+<template name="stackWidget">
+	<div id="{{_id}}" class="well" style="margin-right:10px;min-width:300px;max-width:300px;overflow-y: scroll;padding-left: 15px;">
+	<p style="position:relative;left:-10px;top:-10px;color:gray;text-transform:uppercase;font-size:18px">{{title}}</p>
+	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
+		{{#each cards}}
+			{{> cardWidget}}
+		{{/each}}
+		<button id="add-card-button" class="btn btn-link"><i class="fa fa-plus"></i> Add card...</button>	
+		<div id="add-card-box" class="panel panel-default" style="display:none">
+		<form style="padding:10px">
+		<div class="form-group">
+			<textarea id="add-card-input" class="form-control" style="resize:vertical" autofocus="autofocus"></textarea>
+		</div>
+		<div class="form-group">
+			<button id="create-card-button" class="btn btn-success"><i class="fa fa-plus"></i> Add</button>
+			<button id="cancel-add-card-button" class="btn"><i class="fa fa-times"></i></button>
+		</div>
+		</form>
+		</div>
+	</ul>
+	</div>
+	
+
+</template>

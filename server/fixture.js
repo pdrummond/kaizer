@@ -1,8 +1,8 @@
 
-Meteor.startup(function() {
+/*Meteor.startup(function() {
 	Hubs.remove({});
 	Cards.remove({});
-	Messages.remove({});
+	Messages.remove({});	
 
 	Hubs.insert({
 		_id: "hub-1",
@@ -15,7 +15,8 @@ Meteor.startup(function() {
 		_id: "card-" + i,
 		title: Fake.sentence(10),
 		hubId: "hub-1",
-		createdAt: new Date(),
+		createdAt: new Date().getTime(),
+		createdBy: 
 		status: Fake.fromArray(['Open', 'In Progress', 'Blocked', 'In Test', 'Done']),
 		milestone: Fake.fromArray(['Sprint 1', 'Sprint 10', 'Sprint 2', 'Release 1.0', 'Release Future']),
 	});
@@ -41,4 +42,4 @@ Meteor.startup(function() {
       	addedCardGid: 1,
       	addedCardTitle: "card-1"
 	});
-});
+});*/

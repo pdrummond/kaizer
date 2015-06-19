@@ -1,7 +1,7 @@
-<template name="sidebar">
-	<div class="sidebar-wrapper" style="position:fixed;top:0px;right:0px;height:100%;z-index:999;min-width:300px;transition: all 0.2s ease-in-out;">
-		<div class="panel panel-default" style="padding:50px;overflow-y:scroll">
+<template name="sidebar">	
+		<div class="panel panel-default" style="position:fixed;top:0px;right:0px;height:100%;z-index:9999999;min-width:300px;transition: all 0.2s ease-in-out;padding-left:10px;padding-right:10px">
+			<div class="spacer"></div>
 			{{> Template.dynamic template=sidebarView}}
 		</div>
-	</div>
+	
 </template> 

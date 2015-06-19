@@ -25,5 +25,3 @@ Template.cardPage.helpers({
 		return "columnViewPage";
 	}
 });
-
-CardFilter = new Meteor.FilterCollections(Cards, {});

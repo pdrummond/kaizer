@@ -5,7 +5,7 @@ Template.cardViewPage.helpers({
 });
 
 Template.cardViewPage.events({
-	"click #card-view-back-button": function() {
+	"click #card-view-page #back-button": function() {
 		Session.set("currentSidebarView", "cardListWidget");
 	}
 });

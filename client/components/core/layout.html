@@ -1,9 +1,13 @@
 <template name="layout">
-	{{> header}}
 
 	{{> sidebar}}
 
-	<div class="page-wrap" style="padding:10px">
-    	{{> yield}}
+	<div id="app-wrapper" style="height:100%;padding-top:90px;padding-left:30px;padding-right:300px;overflow:hidden">
+
+		{{> header}}
+
+		<div class="page-wrap" style="height:100%">
+	    	{{> yield}}
+	  	</div>
   	</div>
 </template>
