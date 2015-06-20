@@ -8,10 +8,12 @@ Template.hubListPage.helpers({
 Template.hubListPage.events({
 	"click #new-hub-button": function() {
 		var title = prompt("Hub title:");
-		Meteor.call("createHub", {title: title}, function(error, result) {
-	      if (error) {
-	        return alert(error.reason);
-	      }
-	    });
+		if(title != null) {
+			Meteor.call("createHub", {title: title}, function(error, result) {
+		      if (error) {
+		        return alert(error.reason);
+		      }
+		    });
+		}
 	}
 });

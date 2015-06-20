@@ -1,10 +1,16 @@
 <template name="hubPage">
-<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="#">Stack Board</a></li>
-  <li role="presentation"><a href="#">Status Board</a></li>
-  <li role="presentation"><a href="#">Milestone Board</a></li>
-</ul>
 <div id="board-body" style="height:100%">
+	<h1><i class="fa fa-code-fork"></i> {{currentHubTitle}}</h1>
+	<ul class="nav nav-pills">
+	{{#each currentHubBoards}}
+  		{{> boardPill}}
+  	{{/each}}
+	</ul>
 	{{> columnViewPage }}
 </div>
+
+</template>
+
+<template name="boardPill">
+	<li role="presentation" data-board-id="{{_id}}" class="{{boardActiveClass}}"><a href="#"><i class="fa fa-columns"></i> {{title}}</a></li>
 </template>

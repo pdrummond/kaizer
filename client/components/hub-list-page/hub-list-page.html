@@ -1,9 +1,15 @@
 <template name="hubListPage">
-<h1>Hub</h1>
-<button id="new-hub-button" class="uk-button">Create Hub</button>
-<ul>
+	<div style="margin:50px">
+<div class="jumbotron" style="padding:50px">
+  <h1>Welcome to <i class="fa fa-fire" style="color:gray"></i> <span style="color:gray">Kaiser</span></h1>
+  <p>Create a hub to get started.</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+<button id="new-hub-button" class="btn btn-success">Create Hub</button>
+<div class="list-group" style="margin-top:10px">
 {{#each hubs}}
-	<li><a href="/hub/{{_id}}">{{title}}</a></li>
+	<a class="list-group-item" href="/hub/{{_id}}"><i class="fa fa-code-fork"></i> {{title}}</a>
 {{/each}}
-</ul>
+</div>
+</div>
 </template>
