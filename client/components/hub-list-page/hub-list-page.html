@@ -2,10 +2,16 @@
 	<div style="margin:50px">
 <div class="jumbotron" style="padding:50px">
   <h1>Welcome to <i class="fa fa-fire" style="color:gray"></i> <span style="color:gray">Kaiser</span></h1>
-  <p>Create a hub to get started.</p>
+  {{#if currentUser}}
+  	<p>Create a hub to get started.</p>
+  {{else}}
+  	<p>Register or Login to get started.</p>
+  {{/if}}
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
+{{#if currentUser}}
 <button id="new-hub-button" class="btn btn-success">Create Hub</button>
+{{/if}}
 <div class="list-group" style="margin-top:10px">
 {{#each hubs}}
 	<a class="list-group-item" href="/hub/{{_id}}"><i class="fa fa-code-fork"></i> {{title}}</a>

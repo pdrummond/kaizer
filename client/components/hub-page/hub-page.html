@@ -1,16 +1,17 @@
 <template name="hubPage">
 <div id="board-body" style="height:100%">
-	<h1><i class="fa fa-code-fork"></i> {{currentHubTitle}}</h1>
+	<h1 style="color:gray"><i class="fa fa-code-fork"></i> {{currentHubTitle}}</h1>
 	<ul class="nav nav-pills">
+	<li id="welcome-board-pill" role="presentation" class="board-pill {{welcomeBoardActiveClass}}"><a href="#"><i class="fa fa-smile-o"></i> Welcome</a></li>
 	{{#each currentHubBoards}}
   		{{> boardPill}}
   	{{/each}}
 	</ul>
-	{{> columnViewPage }}
+	{{> boardPage }}
 </div>
 
 </template>
 
 <template name="boardPill">
-	<li role="presentation" data-board-id="{{_id}}" class="{{boardActiveClass}}"><a href="#"><i class="fa fa-columns"></i> {{title}}</a></li>
+	<li role="presentation" data-board-id="{{_id}}" class="board-pill {{boardActiveClass}}"><a href="#"><i class="fa fa-columns"></i> {{title}}</a></li>
 </template>

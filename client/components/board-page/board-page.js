@@ -1,10 +1,17 @@
-Template.columnViewPage.helpers({
+Template.boardPage.helpers({
 	stacks: function() {
-		return Stacks.find({boardId: Session.get('boardId')});
+		return Stacks.find({
+			hubId: Session.get("currentHubId"),
+			boardId: Session.get("currentBoardId")
+		});
+	},
+
+	noSelectedBoard: function(){
+		return Session.get("currentBoardId") == null;
 	}
 });
 
-Template.columnViewPage.events({
+Template.boardPage.events({
 	"click #add-stack-button": function(e) {
 		e.preventDefault();
 		

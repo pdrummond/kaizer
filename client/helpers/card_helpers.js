@@ -18,7 +18,11 @@ UI.registerHelper('currentHubCards', function(context, options) {
 
 Card = {
 	createCard: function(card) {
-		card = _.extend(card, {cardType: 'normal', hubId: Session.get('currentHubId')});
+		card = _.extend(card, {			
+			hubId: Session.get('currentHubId'),
+			boardId: Session.get('currentBoardId'),
+			cardType: 'normal'
+		});
 	    Meteor.call('createCard', card, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
