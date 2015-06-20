@@ -1,14 +1,14 @@
-<template name="cardViewPage">	
-	<div id="card-view-page" style="width:300px;height:100%">
+<template name="cardDetailPage">	
+	<div id="card-detail-page" style="width:300px;height:100%">
 	<div class="btn-group  pull-left" role="group" aria-label="...">
   		<button id="back-button" type="button" class="btn btn-default"><i class="fa fa-arrow-left"></i> Back</button>
   	</div>
   	<div class="btn-group pull-right" role="group" aria-label="...">
   		<button type="button" class="btn btn-danger"><i class="fa fa-times "></i> Delete</button>  
 	</div>	
-	<div style="clear:both;padding-top:10px">
+	<div style="clear:both;padding-top:5px">
 	{{#with currentCard}}
-		{{> cardWidget }}
+		<h3 style="color:gray">{{title}}</h3>
 	{{/with}}
 	</div>
 	<h3><small><i class="fa fa-comment"></i> Comments</small></h3>

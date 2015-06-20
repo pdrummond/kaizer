@@ -1,11 +1,11 @@
-Template.cardViewPage.helpers({
+Template.cardDetailPage.helpers({
 	messages: function() {
 		return Messages.find({cardId: Session.get('currentCardId')});
 	},	
 });
 
-Template.cardViewPage.events({
-	"click #card-view-page #back-button": function() {
+Template.cardDetailPage.events({
+	"click #card-detail-page #back-button": function() {
 		Session.set("currentSidebarView", "cardListWidget");
 	}
 });
