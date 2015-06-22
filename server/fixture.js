@@ -1,13 +1,21 @@
-
-/*Meteor.startup(function() {
+/*
+Meteor.startup(function() {
 	Hubs.remove({});
 	Cards.remove({});
+	Boards.remove({});
 	Messages.remove({});	
 
 	Hubs.insert({
 		_id: "hub-1",
 		title: "Hub One"
 	});
+
+	Boards.insert({
+		_id: "board-1",
+		title: "Stack Board",
+		hubId: "hub-1",
+		field: "stack"
+	})
 
 
 	for(var i =0 ; i < 50; i++) {
@@ -16,12 +24,10 @@
 		title: Fake.sentence(10),
 		hubId: "hub-1",
 		createdAt: new Date().getTime(),
-		createdBy: 
+		createdBy: "pdrummond",		
 		status: Fake.fromArray(['Open', 'In Progress', 'Blocked', 'In Test', 'Done']),
 		milestone: Fake.fromArray(['Sprint 1', 'Sprint 10', 'Sprint 2', 'Release 1.0', 'Release Future']),
 	});
-
-	
 
 	}
 

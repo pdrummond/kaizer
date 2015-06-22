@@ -1,7 +1,7 @@
 
 <template name="stackWidget">
 	<div id="{{_id}}" class="well" style="margin-right:10px;min-width:300px;max-width:300px;overflow-y: scroll;padding-left: 15px;">
-	<p style="position:relative;left:-10px;top:-10px;color:gray;text-transform:uppercase;font-size:18px">{{title}}</p>
+	<p style="position:relative;left:-5px;top:-10px;color:gray;font-size:18px">{{title}}</p>
 	<ul class="uk-sortable" data-uk-sortable="{group:'test'}" style="padding:0">
 		{{#each cards}}
 			{{> cardWidget}}

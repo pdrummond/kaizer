@@ -1,10 +1,10 @@
 Stack = {
 	createStack: function(stack) {	
-		stack = _.extend(stack, {
+		stack = _.extend({
 			hubId: Session.get('currentHubId'), 
 			boardId: Session.get('currentBoardId')
-		});	
-	    Meteor.call('createStack', stack, function(error, result) {
+		}, stack);	
+	    return Meteor.call('createStack', stack, function(error, result) {
 	      if (error) {
 	        return alert(error.reason);
 	      } else {	      	
