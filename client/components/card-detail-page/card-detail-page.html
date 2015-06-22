@@ -6,11 +6,18 @@
   	<div class="btn-group pull-right" role="group" aria-label="...">
   		<button type="button" class="btn btn-danger"><i class="fa fa-times "></i> Delete</button>  
 	</div>	
-	<div style="clear:both;padding-top:5px">
 	{{#with currentCard}}
+	<div style="clear:both;padding-top:5px">
 		<h3 style="color:gray">{{title}}</h3>
-	{{/with}}
 	</div>
+	<h3><small><i class="fa fa-info-circle"></i> Details</small></h3>
+	<table class="table">
+		<tr>
+		<td><b>Stack</b></td>
+		<td>{{stack}}</td>
+		</tr>
+	</table>
+	{{/with}}	
 	<h3><small><i class="fa fa-comment"></i> Comments</small></h3>
 	<div style="padding-left:5px; overflow-y:auto;height:55%">
 	{{#each messages}}

@@ -16,50 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "server/fixture.js",
+			"file": "lib/collections/board-collection.js",
 			"settings":
 			{
-				"buffer_size": 264,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/router.js",
-			"settings":
-			{
-				"buffer_size": 976,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/components/hub-page/hub-page.js",
-			"settings":
-			{
-				"buffer_size": 76,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/components/hub-page/hub-page.html",
-			"settings":
-			{
-				"buffer_size": 936,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/publications.js",
-			"settings":
-			{
-				"buffer_size": 127,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/src/giraffe/lib/router.js",
-			"settings":
-			{
-				"buffer_size": 770,
+				"buffer_size": 805,
 				"line_ending": "Windows"
 			}
 		}
@@ -108,57 +68,72 @@
 		"/D/src/kaizer",
 		"/D/src/kaizer/client",
 		"/D/src/kaizer/client/components",
+		"/D/src/kaizer/client/components/board-page",
+		"/D/src/kaizer/client/components/boards",
+		"/D/src/kaizer/client/components/card-detail-page",
+		"/D/src/kaizer/client/components/card-widget",
 		"/D/src/kaizer/client/components/cards",
 		"/D/src/kaizer/client/components/core",
+		"/D/src/kaizer/client/components/create_box",
 		"/D/src/kaizer/client/components/hub-list-page",
 		"/D/src/kaizer/client/components/hub-page",
 		"/D/src/kaizer/client/components/sidebar",
+		"/D/src/kaizer/client/components/stack-widget",
+		"/D/src/kaizer/client/helpers",
 		"/D/src/kaizer/lib",
 		"/D/src/kaizer/lib/collections",
 		"/D/src/kaizer/lib/schemas",
-		"/D/src/kaizer/server",
-		"/D/src/Telescope/packages",
-		"/D/src/Telescope/packages/telescope-posts/lib",
-		"/D/src/Telescope/packages/telescope-posts/lib/client",
-		"/D/src/Telescope/packages/telescope-posts/lib/client/templates",
-		"/D/src/giraffe",
-		"/D/src/giraffe/lib",
-		"/D/src/giraffe/lib/collections",
-		"/D/src/giraffe/server"
+		"/D/src/testbed"
 	],
 	"file_history":
 	[
+		"/D/src/kaizer/client/components/stack-widget/stack-widget.js",
+		"/D/src/kaizer/client/components/card-detail-page/card-detail-page.html",
+		"/D/src/kaizer/lib/schemas/card-schema.js",
+		"/D/src/kaizer/client/components/hub-page/hub-page.js",
+		"/D/src/kaizer/lib/collections/board-collection.js",
+		"/D/src/kaizer/lib/collections/hub-collection.js",
+		"/D/src/kaizer/client/components/hub-page/hub-page.html",
+		"/D/src/kaizer/lib/collections/card-collection.js",
+		"/D/src/kaizer/lib/collections/message-collection.js",
+		"/D/src/kaizer/client/components/card-widget/card-widget.html",
+		"/D/src/kaizer/client/components/hub-list-page/hub-list-page.html",
+		"/D/src/kaizer/client/helpers/board-helpers.js",
+		"/D/src/kaizer/client/components/sidebar/sidebar.html",
+		"/D/src/kaizer/client/components/cards/activity-sidebar.html",
+		"/D/src/kaizer/client/components/sidebar/sidebar.js",
+		"/D/src/kaizer/client/components/cards/column-view-page.js",
+		"/D/src/kaizer/client/components/cards/column-view-page.html",
+		"/D/src/kaizer/client/components/card-widget/card-widget.js",
+		"/D/src/kaizer/client/components/cards/card-view-page.html",
+		"/D/src/kaizer/client/components/card-list-widget/card-list-widget.html",
+		"/D/src/kaizer/client/components/cards/card-view-page.js",
+		"/D/src/kaizer/client/helpers/card_helpers.js",
+		"/D/src/kaizer/client/components/core/header.html",
 		"/D/src/kaizer/lib/collections/cards.js",
-		"/D/src/kaizer/lib/schemas/cards.js",
+		"/D/src/kaizer/lib/collections/messages.js",
+		"/D/src/kaizer/client/components/create_box/create_box_component.js",
+		"/D/src/kaizer/lib/router.js",
+		"/D/src/testbed/testbed.html",
+		"/D/src/testbed/header.html",
 		"/D/src/kaizer/server/fixture.js",
 		"/D/src/kaizer/server/publications.js",
-		"/D/src/kaizer/lib/router.js",
+		"/D/src/giraffe/lib/router.js",
+		"/D/src/kaizer/lib/schemas/cards.js",
 		"/D/src/kaizer/lib/collections/hubs.js",
 		"/D/src/kaizer/client/components/core/layout.html",
-		"/D/src/kaizer/client/components/hub-page/hub-page.html",
 		"/D/src/kaizer/client/components/cards/card-page.js",
 		"/D/src/kaizer/client/components/card-filter-input/card-filter-input.html",
 		"/D/src/kaizer/client/components/card-filter-input/card-filter-input.js",
 		"/D/src/kaizer/client/stylesheets/style.css",
 		"/D/src/kaizer/client/components/hub-list-page/hub-list-page.js",
-		"/D/src/kaizer/client/components/hub-list-page/hub-list-page.html",
 		"/D/src/kaizer/client/components/workspace-page/workspace-page.js",
 		"/D/src/kaizer/client/components/workspace-list/workspace-list-page.js",
 		"/D/src/kaizer/client/components/workspace-page/workspace-page.html",
 		"/D/src/kaizer/client/components/workspace-list/workspace-list-page.html",
-		"/D/src/kaizer/client/components/cards/activity-sidebar.html",
 		"/D/src/kaizer/client/components/cards/card-page.html",
 		"/D/src/kaizer/client/components/cards/activity-sidebar.js",
-		"/D/src/kaizer/client/components/cards/card-view-page.js",
-		"/D/src/kaizer/lib/collections/messages.js",
-		"/D/src/kaizer/client/helpers/card_helpers.js",
-		"/D/src/kaizer/client/components/cards/card-view-page.html",
 		"/D/src/kaizer/client/components/create_box/create_box.html",
-		"/D/src/kaizer/client/components/create_box/create_box_component.js",
-		"/D/src/kaizer/client/components/sidebar/sidebar.js",
-		"/D/src/kaizer/client/components/sidebar/sidebar.html",
-		"/D/src/kaizer/client/components/cards/column-view-page.js",
-		"/D/src/kaizer/client/components/cards/column-view-page.html",
 		"/D/src/kaizer/client/helpers/board_helpers.js",
 		"/D/src/kaizer/client/components/boards/boards.html",
 		"/D/src/kaizer/lib/collections/stacks.js",
@@ -201,6 +176,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"createBoard",
+			"Session.set(\"currentBoardId\"",
+			"currentBoardId",
 			"Meteor.FilterCollections",
 			"workspace",
 			"Workspace",
@@ -237,53 +215,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server/fixture.js",
+					"file": "lib/collections/board-collection.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 264,
+						"buffer_size": 805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								139,
-								139
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "lib/router.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 976,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								375,
-								375
+								646,
+								646
 							]
 						],
 						"settings":
@@ -293,126 +242,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/components/hub-page/hub-page.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 76,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								70,
-								70
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/components/hub-page/hub-page.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 936,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								671,
-								671
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
+						"translation.y": 310.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server/publications.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 127,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/D/src/giraffe/lib/router.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 770,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								194,
-								194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -457,7 +290,7 @@
 	"project": "kaizer.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -466,6 +299,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"schema",
+				"kaizer\\lib\\schemas\\card-schema.js"
+			],
 			[
 				"messagecontr",
 				"bs-web\\target\\bs-web\\js\\home\\app\\view\\MessageContainerView.js"
@@ -503,7 +340,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 247.0,
+	"side_bar_width": 300.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

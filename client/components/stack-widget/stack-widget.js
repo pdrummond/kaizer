@@ -1,6 +1,6 @@
 Template.stackWidget.helpers({
 	cards: function() {
-		return Cards.find({stackId: this._id});
+		return Cards.find({stackIds: this._id});
 	}
 });
 
@@ -38,7 +38,15 @@ Template.stackWidget.events({
 		var $stack = $("#" + this._id);
 		var title = $stack.find('#add-card-input').val();		
 	    if(title.length > 0) {
-	      	Card.createCard({stackId: this._id, title: title});	        
+	    	//TODO: Once this all works, pass title and stack id into Create Card
+	    	//and do all the work their instead of here.
+	    	var card = {stackIds: [this._id], title: title, status: 'New'};
+
+	    	var boardId = Session.get('currentBoardId');
+	    	var boardField = Boards.findOne(boardId).field;
+	    	var stackValue = this.title;
+	    	card[boardField] = stackValue;
+	      	Card.createCard(card);
 	      }
 	}
 });
