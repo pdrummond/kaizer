@@ -23,3 +23,32 @@ body, h1, h2, h3, h4, h5, h6, .uk-navbar-nav > li > a {
 .activity-item :hover .time-label {
 	display:inline;
 }
+
+.card-details-box {
+	border: 1px solid black;
+	box-shadow: 2px 2px 5px #C8C8C8;
+}
+
+.card-details-box .row {
+	padding:10px;
+	background:lightgray;
+	text-align:center;
+}
+
+.card-details-box .label {
+	color:gray;
+}
+
+.card-details-box .value {
+	font-size:18px;
+}
+
+.card-details-box .column {
+	xborder-right: 1px solid gray;
+}
+
+.card-details-box .status-row {
+	text-align:center;
+	background:black;
+	color:white;
+}

@@ -10,17 +10,23 @@
 	<div style="clear:both;padding-top:5px">
 		<h3 style="color:gray">{{title}}</h3>
 	</div>
-	<h3><small><i class="fa fa-info-circle"></i> Details</small></h3>
-	<table class="table">
-		<tr>
-		<td><b>Status</b></td>
-		<td>{{status}}</td>
-		</tr>
-		<tr>
-		<td><b>Stack</b></td>
-		<td>{{stack}}</td>
-		</tr>
-	</table>
+	<div class="card-details-box container-fluid">
+  		<div class="row status-row">
+  			<div class="col-md-12">
+  				Status: <strong>Active</strong>
+  			</div>
+	  	</div>
+	  	<div class="row">
+	  		<div class="column col-md-6">
+	  			<p class="label">Votes</p>
+	  			<p class="value">12</p>
+	  		</div>
+	  		<div class="column col-md-6">
+	  			<p class="label">Found In</p>
+	  			<p class="value">Version 1.2.1</p>
+	  		</div>
+	  	</div>
+	</div>
 	{{/with}}	
 	<h3><small><i class="fa fa-comment"></i> Comments</small></h3>
 	<div style="padding-left:5px; overflow-y:auto;height:55%">
