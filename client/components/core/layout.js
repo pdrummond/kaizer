@@ -13,6 +13,7 @@ Template.layout.helpers({
 		var template = Session.get('viewModeTemplate');
 		template = template == null ? 'columnViewPage' : template;
 		console.log("template: " + template);
+
 		return template;
 	}
 })
