@@ -10,20 +10,20 @@ Package.onUse(function (api) {
   
   var packages = [
     'standard-app-packages',
+    'underscore',
     'accounts-ui',
     'accounts-base',
     'accounts-password',
     'accounts-twitter',
     'accounts-facebook',
     'reactive-var',
-    'aldeed:simple-schema@1.3.3',
-    'aldeed:collection2@2.3.3',
-    'sacha:autoform@5.1.2',
-    'iron:router@1.0.9',
-    'chuangbo:marked@0.3.5',
-    'momentjs:moment@2.10.3',
-    'fortawesome:fontawesome@4.3.0',
-    'jparker:gravatar@0.3.1'
+    'aldeed:simple-schema',
+    'aldeed:collection2',
+    'aldeed:autoform',
+    'iron:router',
+    'momentjs:moment',
+    'fortawesome:fontawesome',
+    'jparker:gravatar'
   ];
 
   api.use(packages);
@@ -36,10 +36,7 @@ Package.onUse(function (api) {
   ], ['client', 'server']);  
 
   api.export([
-    'Kaizer',
-    '_',
-    'getTemplate',
-    'templates'
+    'Kaizer'
   ]);
 
 });

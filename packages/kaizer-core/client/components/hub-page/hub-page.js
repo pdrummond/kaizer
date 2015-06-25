@@ -4,19 +4,24 @@ Template.hubPage.helpers({
 	},
 
 	welcomeBoardActiveClass: function() {
-		return Session.get("currentBoardId") == null ? "active" : "";
+		return Session.get("currentPageId") == null ? "active" : "";
+	},
+
+	selectedPageTemplate: function() {
+		var hubPage = Session.get("currentHubPage");
+		return hubPage != null ? hubPage.template : "hubPageWelcomeTemplate";
 	}
 });
 
 Template.hubPage.events({
 	"click #welcome-board-pill": function() {
-		Session.set("currentBoardId", null);
-		Session.set("currentBoard", null);
+		Session.set("currentHUbPageId", null);
+		Session.set("currentHubPage", null);
 	},
 
-	"click .board-pill": function() {
-		Session.set("currentBoardId", this._id);
-		Session.set("currentBoard", Boards.findOne(this._id));
+	"click .page-pill": function() {
+		Session.set("currentHubPageId", this._id);
+		Session.set("currentHubPage", HubPages.findOne(this._id));
 	},
 
 	"click #new-board-button": function() {
@@ -34,11 +39,9 @@ Template.hubPage.events({
 	}
 });
 
-Template.boardPill.helpers({
-	boardActiveClass: function() {
-		return Session.get("currentBoardId") == this._id ? "active" : "";
-	},
-
-	
+Template.pagePill.helpers({
+	pageActiveClass: function() {
+		return Session.get("currentHubPageId") == this._id ? "active" : "";
+	},	
 });
 

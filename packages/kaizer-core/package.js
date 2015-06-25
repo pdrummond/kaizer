@@ -11,10 +11,16 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.use(['kaizer:lib']);  
+  api.versionsFrom('1.1.0.2');  
+  api.use(['standard-app-packages']);
   api.addFiles('kaizer-core.js');
   api.addFiles('hub-pages.js');
+  
+  api.addFiles([
+    'client/components/hub-page/hub-page.html',
+    'client/components/hub-page/hub-page.js',
+    ], 'client');
+
   api.export(['Kaizer']);
 });
 

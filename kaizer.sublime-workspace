@@ -16,18 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "client/components/hub-page/hub-page.js",
+			"file": "packages/kaizer-lib/package.js",
 			"settings":
 			{
-				"buffer_size": 991,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/components/hub-page/hub-page.html",
-			"settings":
-			{
-				"buffer_size": 912,
+				"buffer_size": 826,
 				"line_ending": "Windows"
 			}
 		}
@@ -76,20 +68,22 @@
 		"/D/src/kaizer",
 		"/D/src/kaizer/client",
 		"/D/src/kaizer/client/components",
-		"/D/src/kaizer/client/components/card-list-page",
 		"/D/src/kaizer/client/components/hub-list-page",
 		"/D/src/kaizer/client/components/hub-page",
 		"/D/src/kaizer/lib",
 		"/D/src/kaizer/lib/collections",
+		"/D/src/kaizer/packages",
+		"/D/src/kaizer/packages/kaizer-lib",
+		"/D/src/kaizer/packages/kaizer-lib/lib",
 		"/D/src/kaizer/server",
-		"/D/src/Telescope/packages",
-		"/D/src/Telescope/packages/telescope-lib",
 		"/D/src/sovin",
 		"/D/src/sovin/packages",
 		"/D/src/sovin/packages/soap"
 	],
 	"file_history":
 	[
+		"/D/src/kaizer/client/components/hub-page/hub-page.js",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/README.md",
 		"/D/src/kaizer/lib/collections/board-collection.js",
 		"/D/src/sovin/sovin.html",
 		"/D/LocalData/ukx7675/Desktop/configurator/models.json",
@@ -104,7 +98,6 @@
 		"/D/src/kaizer/client/components/hub-page/hub-page.html",
 		"/D/src/kaizer/client/components/stack-widget/stack-widget.js",
 		"/D/src/kaizer/lib/schemas/card-schema.js",
-		"/D/src/kaizer/client/components/hub-page/hub-page.js",
 		"/D/src/kaizer/lib/collections/hub-collection.js",
 		"/D/src/kaizer/lib/collections/card-collection.js",
 		"/D/src/kaizer/lib/collections/message-collection.js",
@@ -226,62 +219,34 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/components/hub-page/hub-page.js",
-					"semi_transient": false,
+					"file": "packages/kaizer-lib/package.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 991,
+						"buffer_size": 826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								966,
-								966
+								810,
+								810
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/components/hub-page/hub-page.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 912,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								709,
-								709
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 17.0,
+						"translation.x": -0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

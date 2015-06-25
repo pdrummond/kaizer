@@ -1,14 +1,14 @@
 #Kazier CardLister Hub Page
 
-This Kaizer package provides the CardLister page, which provides a listview of all 
+This Kaizer package provides the CardLister page, a listview of all 
 cards in a hub with support for full text search and filtering on custom fields.
 
 To add this page to Kaizer, simply run:
 
 	meteor add kaizer:hubpage-cardlister
 
-By default, an instance of card lister called *Issues* will be added to all 'standard' hubs. 
-It is configured to show only cards of type `task` or `issue`.
+By default, card list called *Issues* will be added to all 'standard' hubs. 
+It is configured to show cards of type `task` or `issue`.
 
 All configuration is in `config.js`. Here is the default config:
 
@@ -19,7 +19,7 @@ All configuration is in `config.js`. Here is the default config:
 		cardTypes: ['issue', 'task']
 	});
 
-You can replace the existing page by changing this config.  You can also add pages by simply
+You can replace the existing page by changing this config accordingly.  You can also add pages by simply
 adding a new call to `addPage`.  For example, this adds a page showing all the 'question' cards to 
 hubs of type 'qanda':
 
@@ -31,4 +31,4 @@ hubs of type 'qanda':
 	});
 
 ## Todo
- [ ] Explain how to customise the filter dropdowns
+ - [ ] Explain how to customise the filter dropdowns

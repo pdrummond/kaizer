@@ -6,13 +6,20 @@ Kaizer.HubPages = {
   }
 };
 
-var HubPages = new Mongo.Collection("hub-pages");
+HubPages = new Mongo.Collection("hub-pages");
 
 Meteor.methods({
   addPage: function(page) { 
     check(page, Match.Any);       
     var pageId = HubPages.upsert(page._id, page);
-    return HubPages.findOne(pageId);
+    return {
+    	_id: pageId
+    }
   },
 });
+
+UI.registerHelper('currentHubPages', function(context, options) {
+  return HubPages.find({hubType: Session.get("currentHub").hubType});
+});
+
 
