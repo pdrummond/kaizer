@@ -1,9 +1,20 @@
 Kaizer.HubPages.addPage({
+	_id: 'welcome-page',
+	pageTitle: "Welcome",
+	pageIcon: 'fa-smile-o',
+	template: 'hubWelcomePage',
+	hubType: 'standard',
+	order: 1
+});
+
+
+Kaizer.HubPages.addPage({
 	_id: 'page-one',
-	template: 'cardListerHubPage',	
+	template: 'cardListerHubPage',
 	pageTitle: 'Issues',
 	hubType: 'standard',
-	cardTypes: ['issue', 'task']
+	cardTypes: ['issue', 'task'],
+	order:2
 });
 
 Kaizer.HubPages.addPage({
@@ -11,5 +22,6 @@ Kaizer.HubPages.addPage({
 	template: 'cardListerHubPage',
 	pageTitle: 'Questions',
 	hubType: 'standard',
-	cardTypes: ['issue', 'task']
+	cardTypes: ['issue', 'task'],
+	order:3
 });

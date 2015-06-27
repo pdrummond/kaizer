@@ -24,4 +24,5 @@ fortawesome:fontawesome
 ian:accounts-ui-bootstrap-3
 aldeed:autoform
 kaizer:core
-kaizer:hubpage-cardlister
+kaizer:cardlist
+kaizer:welcomepage

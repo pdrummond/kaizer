@@ -19,7 +19,7 @@ Meteor.methods({
 });
 
 UI.registerHelper('currentHubPages', function(context, options) {
-  return HubPages.find({hubType: Session.get("currentHub").hubType});
+  return HubPages.find({hubType: Session.get("currentHub").hubType},{sort: {order: 1}});   
 });
 
 
