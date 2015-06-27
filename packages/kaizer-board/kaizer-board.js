@@ -1,4 +1,5 @@
-Template.boardPage.helpers({
+if(Meteor.isClient) {
+Template.boardHubPage.helpers({
 	stacks: function() {
 		return Stacks.find({
 			hubId: Session.get("currentHubId"),
@@ -11,7 +12,7 @@ Template.boardPage.helpers({
 	}
 });
 
-Template.boardPage.events({
+Template.boardHubPage.events({
 	"click #add-stack-button": function(e) {
 		e.preventDefault();
 		
@@ -45,3 +46,4 @@ Template.boardPage.events({
 	      }
 	}
 });
+}

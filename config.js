@@ -25,3 +25,11 @@ Kaizer.HubPages.addPage({
 	cardTypes: ['issue', 'task'],
 	order:3
 });
+
+Kaizer.HubPages.addPage({
+	_id: 'page-three',
+	template: 'boardHubPage',
+	pageTitle: 'Roadmap',
+	hubType: 'standard',
+	order:4
+});

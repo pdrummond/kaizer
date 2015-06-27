@@ -43,6 +43,7 @@ jparker:crypto-md5@0.1.1
 jparker:gravatar@0.3.1
 jquery@1.11.3_2
 json@1.0.3
+kaizer:board@0.0.1
 kaizer:cardlist@0.0.1
 kaizer:core@0.0.1
 kaizer:welcomepage@0.0.1
