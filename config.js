@@ -1,5 +1,5 @@
-Kaizer.HubPages.addPage({
-	_id: 'welcome-page',
+Kaizer.config.addPage({
+	_id: 'welcome-page',	
 	pageTitle: "Welcome",
 	pageIcon: 'fa-smile-o',
 	template: 'hubWelcomePage',
@@ -8,7 +8,7 @@ Kaizer.HubPages.addPage({
 });
 
 
-Kaizer.HubPages.addPage({
+Kaizer.config.addPage({
 	_id: 'page-one',
 	template: 'cardListerHubPage',
 	pageTitle: 'Issues',
@@ -17,7 +17,7 @@ Kaizer.HubPages.addPage({
 	order:2
 });
 
-Kaizer.HubPages.addPage({
+Kaizer.config.addPage({
 	_id: 'page-two',
 	template: 'cardListerHubPage',
 	pageTitle: 'Questions',
@@ -26,8 +26,9 @@ Kaizer.HubPages.addPage({
 	order:3
 });
 
-Kaizer.HubPages.addPage({
+Kaizer.config.addPage({
 	_id: 'page-three',
+	pageType: 'board',	
 	template: 'boardHubPage',
 	pageTitle: 'Roadmap',
 	hubType: 'standard',

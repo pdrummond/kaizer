@@ -15,6 +15,18 @@ Template.hubPage.events({
 	"click .page-pill": function() {
 		Session.set("currentHubPageId", this._id);
 		Session.set("currentHubPage", HubPages.findOne(this._id));
+		if(this.pageType == "board") {
+			var board = Boards.findOne({
+				hubId: Session.get('currentHubId'), 
+				hubPageId: this._id
+			});
+			if(board != null) {
+				Session.set("currentBoard", board);
+				Session.set("currentBoardId", board._id);
+			} else {
+				console.error("Unable to find a board for this page. Please check your config.js");
+			}
+		}
 	},
 
 	/*"click #new-board-button": function() {

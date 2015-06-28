@@ -6,7 +6,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.use(['standard-app-packages', 'kaizer:core']);  
+  api.use(['meteor-platform', 'kaizer:core']);  
   api.addFiles(['kaizer-board.html', 'kaizer-board.js']);
 });
 

@@ -1,6 +1,6 @@
 Kaizer = Kaizer || {};
 
-Kaizer.HubPages = {
+Kaizer.config = {
   addPage: function(pageAttrs) {
     return Meteor.call('addPage', pageAttrs);
   }
