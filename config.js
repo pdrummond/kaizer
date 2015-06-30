@@ -7,7 +7,6 @@ Kaizer.config.addPage({
 	order: 1
 });
 
-
 Kaizer.config.addPage({
 	_id: 'page-one',
 	template: 'cardListerHubPage',
@@ -33,4 +32,35 @@ Kaizer.config.addPage({
 	pageTitle: 'Roadmap',
 	hubType: 'standard',
 	order:4
+});
+
+Kaizer.config.addPage({
+	_id: 'page-four',
+	pageType: 'board',	
+	template: 'boardHubPage',
+	pageTitle: 'Task Status',
+	boardField: 'status',
+	hubType: 'standard',
+	order:5
+});
+
+
+Kaizer.config.addPage({
+	_id: 'page-five',
+	pageType: 'board',	
+	template: 'boardHubPage',
+	pageTitle: 'BOOM',
+	boardField: 'stack',
+	hubType: 'standard',
+	order:6
+});
+
+Kaizer.config.addPage({
+	_id: 'page-ten',
+	pageType: 'board',	
+	template: 'boardHubPage',
+	pageTitle: 'BOOM',
+	boardField: 'stack',
+	hubType: 'standard',
+	order:6
 });

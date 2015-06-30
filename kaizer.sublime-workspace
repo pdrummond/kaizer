@@ -16,10 +16,42 @@
 	"buffers":
 	[
 		{
-			"file": "packages/kaizer-lib/package.js",
+			"file": "packages/kaizer-cardlist/src/cardlist.html",
 			"settings":
 			{
-				"buffer_size": 826,
+				"buffer_size": 2348,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config.js",
+			"settings":
+			{
+				"buffer_size": 1154,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "packages/kaizer-core/hub-pages.js",
+			"settings":
+			{
+				"buffer_size": 1483,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/collections/board-collection.js",
+			"settings":
+			{
+				"buffer_size": 1617,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "packages/kaizer-core/collections/hub-collection.js",
+			"settings":
+			{
+				"buffer_size": 992,
 				"line_ending": "Windows"
 			}
 		}
@@ -66,23 +98,39 @@
 	"expanded_folders":
 	[
 		"/D/src/kaizer",
-		"/D/src/kaizer/client",
-		"/D/src/kaizer/client/components",
-		"/D/src/kaizer/client/components/hub-list-page",
-		"/D/src/kaizer/client/components/hub-page",
 		"/D/src/kaizer/lib",
 		"/D/src/kaizer/lib/collections",
 		"/D/src/kaizer/packages",
-		"/D/src/kaizer/packages/kaizer-lib",
-		"/D/src/kaizer/packages/kaizer-lib/lib",
+		"/D/src/kaizer/packages/kaizer-cardlist/src",
+		"/D/src/kaizer/packages/kaizer-core",
+		"/D/src/kaizer/packages/kaizer-core/client",
+		"/D/src/kaizer/packages/kaizer-core/client/components/hub-page",
+		"/D/src/kaizer/packages/kaizer-core/collections",
 		"/D/src/kaizer/server",
-		"/D/src/sovin",
+		"/D/src/giraffe",
+		"/D/src/giraffe/lib",
 		"/D/src/sovin/packages",
 		"/D/src/sovin/packages/soap"
 	],
 	"file_history":
 	[
+		"/D/src/kaizer/packages/kaizer-core/client/components/hub-page/hub-page.html",
+		"/D/src/kaizer/packages/kaizer-core/client/components/hub-page/hub-page.js",
+		"/D/src/kaizer/config.js",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/src/hubpage-cardlister.html",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/src/hubpage-cardlister.js",
+		"/D/src/kaizer/packages/kaizer-core/hub-pages.js",
+		"/D/src/kaizer/client/components/hub-list-page/hub-list-page.js",
+		"/D/src/kaizer/client/components/hub-page/hub-page.html",
+		"/D/src/kaizer/packages/kaizer-core/package.js",
 		"/D/src/kaizer/client/components/hub-page/hub-page.js",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/package.js",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/config.js",
+		"/D/src/kaizer/client/helpers/hub-helpers.js",
+		"/D/src/kaizer/lib/collections/hub-collection.js",
+		"/D/src/kaizer/packages/kaizer-lib/package.js",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/src/hubpage_cardlister.html",
+		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/src/hubpage_cardlister.js",
 		"/D/src/kaizer/packages/kaizer-hubpage-cardlister/README.md",
 		"/D/src/kaizer/lib/collections/board-collection.js",
 		"/D/src/sovin/sovin.html",
@@ -95,10 +143,8 @@
 		"/D/src/sovin/packages/soap/package.js",
 		"/D/src/sovin/.meteor/packages",
 		"/D/src/sovin/sovin.js",
-		"/D/src/kaizer/client/components/hub-page/hub-page.html",
 		"/D/src/kaizer/client/components/stack-widget/stack-widget.js",
 		"/D/src/kaizer/lib/schemas/card-schema.js",
-		"/D/src/kaizer/lib/collections/hub-collection.js",
 		"/D/src/kaizer/lib/collections/card-collection.js",
 		"/D/src/kaizer/lib/collections/message-collection.js",
 		"/D/src/kaizer/client/components/card-widget/card-widget.html",
@@ -130,7 +176,6 @@
 		"/D/src/kaizer/client/components/cards/card-page.js",
 		"/D/src/kaizer/client/components/card-filter-input/card-filter-input.html",
 		"/D/src/kaizer/client/components/card-filter-input/card-filter-input.js",
-		"/D/src/kaizer/client/components/hub-list-page/hub-list-page.js",
 		"/D/src/kaizer/client/components/workspace-page/workspace-page.js",
 		"/D/src/kaizer/client/components/workspace-list/workspace-list-page.js",
 		"/D/src/kaizer/client/components/workspace-page/workspace-page.html",
@@ -219,24 +264,82 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "packages/kaizer-lib/package.js",
-					"semi_transient": true,
+					"file": "packages/kaizer-cardlist/src/cardlist.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 826,
+						"buffer_size": 2348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								810,
-								810
+								2237,
+								2237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 912.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								949,
+								949
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "packages/kaizer-core/hub-pages.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1176,
+								1176
 							]
 						],
 						"settings":
@@ -245,11 +348,71 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 114.0,
+						"translation.x": 0.0,
+						"translation.y": 188.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/collections/board-collection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								952,
+								952
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "packages/kaizer-core/collections/hub-collection.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								916
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

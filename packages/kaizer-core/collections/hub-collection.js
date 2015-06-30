@@ -24,7 +24,8 @@ Meteor.methods({
           hubPageId: page._id
         }, function(error, result) {
           if (error) {
-            console.error("Error creating hub board: " + error.message);
+            console.error("Error creating hub board on page " + 
+              page._id + " for hub " + hubId + ":" + error.message);
           }
         });        
       }
