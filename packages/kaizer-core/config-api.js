@@ -1,12 +1,14 @@
 Kaizer = Kaizer || {};
 
 Kaizer.config = {
-  addPage: function(pageAttrs) {
-    return Meteor.call('addPage', pageAttrs);
+  addHub: function(hubAttrs) {
+    return Meteor.call("createHub", hubAttrs);
+  },
+
+  addBoard: function(boardAttrs) {
+    return Meteor.call('createBoard', boardAttrs);
   }
 };
-
-HubPages = new Mongo.Collection("hub-pages");
 
 Meteor.methods({
   addPage: function(page) { 
