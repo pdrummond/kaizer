@@ -10,19 +10,48 @@ Kaizer.config.addCardType("taskCard",
 				]),
 		milestone: String	
 	}],
-	isActionable: true,
-	consideredDoneWhen: {fieldName: "status", value: "done"}
+	cardIsActionable: true,
+	cardIsDoneWhen: {fieldName: "status", value: "done"}
 });
 
-Kaizer.config.addHubType("project-management", {	
-	title: "Project Management",
-	boards: [{
+Kaizer.config.addTemplate("software-management", {	
+	title: "Software Management",
+	pages: [{
+		title:"Activity Feed",
+		type: "activity-feed",
+	}, {
 		title:"Cards",
-		boardType: "kaizer:single-list-board",
+		type: "card-list",
 		filterDropdownFields: ["status", "votes", "releases"]
 	}, {
-		title:"Milestones",
-		boardType: "kaizer:column-list-board"
-		statusField: "milestone"
+		title:"Roadmap",
+		type: "board"
+		allowedCards: ["taskCard"],		
+		allowedColumnFields: ["status", "milestone", "fixed-version"],
+	}, {
+		title:"Discussions",
+		type: "card-list",
+		allowedCards: ["discussionCard"]		
+	}, {
+		title:"Knowledge Base",
+		type: "card-list"
+		allowedCards: ["articleCard"]	
+	}]
+});
+
+Kaizer.config.addWorkflow("task-workflow", {
+	cardType: "card",
+
+	rules: [{
+		event: "card-created", who: "anyone", action: {name: "set-card-field", field: "milestone", value: "backlog"},
+		event: "card-changed", field: "status", from: "new", to: "accepted", who: "pdrummond", actions: [{
+			name: "show-field-dialog",
+			field: "milestone",
+			prompt: "Select milestone for task",			
+		}, {
+			name: "set-card-field",
+			field: "assignee",
+			value: "pdrummond"
+		}]
 	}]
 });

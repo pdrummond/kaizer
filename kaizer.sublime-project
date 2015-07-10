@@ -2,7 +2,13 @@
 	"folders":
 	[
 		{
+			"path": "D:\\src\\boom"
+		},
+		{
 			"path": "."
+		},
+		{
+			"path": "D:\\src\\exp-niivos-configurator"
 		},
 		{
 			"path": "D:\\src\\bs-workspace\\bs-web"
@@ -18,6 +24,9 @@
 		},
 		{
 			"path": "D:\\src\\sovin"
+		},
+		{
+			"path": "D:\\src\\angular-phonecat"
 		}
 	]
 }
